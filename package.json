@@ -2,13 +2,13 @@
   "name": "argswap-miniapp",
   "version": "1.0.0",
   "description": "ARGswap - Mini DEX app for swapping, liquidity, and staking on Worldcoin OP Stack",
-  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "npm install --legacy-peer-deps && next build"
   },
   "dependencies": {
     "apexcharts": "^3.44.0",
@@ -26,5 +26,6 @@
     "eslint-config-next": "14.1.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "license": "MIT"
 }
